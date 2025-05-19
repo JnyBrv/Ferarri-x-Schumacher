@@ -3,13 +3,53 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Title>Ferrari x Shumacher</Title>
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
     </head>
     <body>
         <div class="header">
             <img src="assets/Ferrari Logo.png" alt="Ferrari Logo">
-            Ferrarx Shumacher
-            <a> </a>
+            Ferrari x Shumacher
+            <div class="nav">
+                <a>HOME</a>
+                <a href="prf">PROFILE</a>
+                <a href="crr">CAREER</a>
+                <a href="grg">GARAGE</a>
+            </div>
         </div>
     </body>
 </html>
+
+
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between; /* This puts nav on the right */
+        align-items: center;
+        padding: 10px 20px;
+        background-color: brown;
+        color: white;
+    }
+
+    .header img {
+        width: 45px;
+        height: auto; 
+    }
+
+    .header nav {
+        
+    }
+
+    .nav a {
+        margin-left: 5px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .nav a:hover {
+        background-color: green;
+        color: rgb(0, 0, 0);
+        transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+</style>

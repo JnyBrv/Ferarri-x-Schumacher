@@ -1,0 +1,21 @@
+.header {
+    width: 45px;
+    height: 45px;
+    width: inherit;
+    background-color: brown;
+}
+
+.header img {
+    width: 45px;
+    height: auto; 
+}
+
+.header nav {
+    
+}
+
+.header nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: black;
+}
