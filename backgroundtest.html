@@ -5,8 +5,80 @@
         <Title>Ferrari x Shumacher</Title>
     </head>
     <body>
-        <div class="Top"></div>
-        <div class="partner"></div>
+        <div class="Top">
+            <div class="header">   
+                <div class="title">
+                <img src="assets/Ferrari Logo.png" alt="Ferrari Logo">
+                <span class="title-text">Ferrari x Schumacher</span>
+                </div>
+
+                <div class="nav">
+                    <a>HOME</a>
+                    <a href="#prf">PROFILE</a>
+                    <a href="#crr">CAREER</a>
+                    <a href="f12000.html">GARAGE</a>
+                </div>
+            </div>
+
+            <div class="Intro">
+                 <p class="white-text">FERRARI X SCHUMACHER</p>
+                 <p class="yellow-title">A Legacy Forged 
+                in Maranello</p>
+                 <p class="white-text">From the moment Michael Schumacher donned the Rosso 
+                Corsa in 1996, he and Ferrari rewrote the record books. 
+                Explore their journey: the victories, the innovations, 
+                and the bond that transcended motorsport.</p>
+                 <a href="" class="white-text">DISCOVER THE TIMELINE → </a>
+            </div>
+
+            <div class="yellow-title">
+                <p>ABOUT</p> 
+            </div>
+
+            <div class="prtn-intro">
+                <p class="yellow-title">A PARTNER LIKE NO OTHER</p>
+                <p class="white-text">When Michael Schumacher joined Ferrari in late 1995,
+                    the team had endured nearly two decades without a 
+                    Drivers’ Championship.
+                    Over the next nine seasons (1996–2006),
+                    Schumacher’s record-breaking 
+                    five straight world titles (2000–2004) would 
+                    revive the Prancing Horse and cement his status as 
+                    the sport’s greatest. This site honors their shared 
+                    milestones, technical innovations, and the spirit of 
+                    excellence that defined an era.</p>
+            </div>
+
+            <div class="prof" id="prf">
+
+                <p class="yellow-title">PROFILE</p>
+                <p class="white-text"> MICHAEL SCHUMACHER</p>
+                <p class="white-text"> 3 January 1969, Hürth, Germany</p>
+                <p class="white-text">Michael Schumacher (b. 1969) is a German F1 icon who 
+                    propelled Ferrari to five straight drivers’ titles 
+                    (2000–2004) and six constructors’ crowns (2000–2005). 
+                    His relentless work ethic and technical mastery reshaped 
+                    the sport’s standards.</p>
+            </div> 
+
+            <div class="car" id="crr">
+                <p class="yellow-title">CAREER</p>
+                <p class="white-text">From Michael Schumacher’s karting triumphs as a rising
+                    prodigy to his domination of Formula 1, this section 
+                    charts the full timeline of his racing 
+                    career—highlighting each championship victory, 
+                    tally of podium finishes, and unforgettable moments on 
+                    track. Delve into the milestones that turned a young 
+                    talent into a record-breaking legend.</p>
+                <p class="white-text">Read more  →</p>
+             </div>
+
+        </div>
+
+
+        <div class="partner">
+        </div>
+        
         <div class="career"></div>
         <div class="wins"></div>
 
@@ -17,8 +89,85 @@
     html, body{
         margin: 0;
         padding: 0;
+        font-family: Alexandria;
     }
 
+    .yellow-title{
+        color: #FFFF00;
+        font-size: 48px;
+        margin-left: 100px;
+    }
+
+
+    .white-text{
+        color: white;
+        font-size: 24px;
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between; /* This puts nav on the right */
+        align-items: center;
+        padding: 10px 15px;
+        
+        /* background-color: brown; */
+        color: white;
+      
+        border: 0px;
+        border-bottom: 5px;
+        border-style: solid;
+    }
+
+    .header img {
+        width: 60px;
+        height: auto; 
+        margin-right: 19px;
+        margin-left: 20px;
+    }
+
+    .title{
+        display: flex;
+        width: 45px;
+        height: auto;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    .title-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+    }
+
+
+    nav {
+        margin-right: 20px;
+    }
+
+    .nav a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    .nav a:hover {
+        background-color: green;
+        color: rgb(0, 0, 0);
+        transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+    .Intro {
+        margin-top: 5%;
+    }
+
+
+    
+    /* background */
     .Top, .partner, .career, .wins {
         height: 100vh; /* Full screen height for each section */
         background-size: cover;

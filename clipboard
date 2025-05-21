@@ -1,0 +1,33 @@
+<div class="header">
+
+                <div class="title">
+                <img src="assets/Ferrari Logo.png" alt="Ferrari Logo">
+                <span class="title-text">Ferrari x Schumacher</span>
+                </div>
+
+                <div class="nav">
+                    <a href="backgroundtest.html">HOME</a>
+                    <a href="">GARAGE</a>
+                </div>
+            </div>
+
+            .header{
+        display: flex;
+        justify-content: space-between; /* This puts nav on the right */
+        align-items: center;
+        padding: 10px 15px;
+        
+        /* background-color: brown; */
+        color: white;
+      
+        border: 0px;
+        border-bottom: 5px;
+        border-style: solid;
+    }
+
+    .header img {
+        width: 60px;
+        height: auto; 
+        margin-right: 19px;
+        margin-left: 20px;
+    }
