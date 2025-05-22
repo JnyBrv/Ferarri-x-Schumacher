@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open HTML file directly",
-            "file": "${workspaceFolder}/f12000.html"
+            "file": "${workspaceFolder}/backgroundtest.html"
         }
     ]
 }

@@ -6,8 +6,7 @@
     </head>
     <body>
         <div class="top">
-            <div class="header">
-
+             <div class="header">   
                 <div class="title">
                 <img src="assets/Ferrari Logo.png" alt="Ferrari Logo">
                 <span class="title-text">Ferrari x Schumacher</span>
@@ -15,16 +14,18 @@
 
                 <div class="nav">
                     <a>HOME</a>
-                    <a href="#grg">GARAGE</a>
+                    <a href="#prf">PROFILE</a>
+                    <a href="#crr">CAREER</a>
+                    <a href="f12000.html">GARAGE</a>
                 </div>
             </div>
 
               <div class="tNav">
-                    <a href="f12004.html">F12004</a>
-                    <a href="f12003.html">F12003</a>
-                    <a href="f12002.html">F12002</a>
+                    <a href="f12000.html">F12000</a>
                     <a href="f12001.html">F12001</a>
-                    <a href="f12000">F12000</p>    
+                    <a href="f12002.html">F12002</a>
+                    <a href="f12003.html">F12003</a>
+                    <a href="f12004.html">F12004</a>    
                 </div>
 
                 <div class="spc-div">
@@ -54,6 +55,7 @@
                         <p>Points: 10</p> 
                     </div>
                 </div>
+                
         </div>
 
         <div class="mid-bg"></div>
@@ -62,6 +64,12 @@
 </html>
 
 <style>
+    html, body{
+        margin: 0;
+        padding: 0;
+        font-family: Alexandria;
+    }
+
     .header{
         display: flex;
         justify-content: space-between; /* This puts nav on the right */
@@ -82,9 +90,42 @@
         margin-right: 19px;
         margin-left: 20px;
     }
+    
+    .title{
+        display: flex;
+        width: 45px;
+        height: auto;
+        margin-right: 10px;
+        align-items: center;
+    }
 
-    .top .mid-bg .bot-bg{
-        height: 100vh; /* Full screen height for each section */
+    .title-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    .nav a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    .nav a:hover {
+        background-color: green;
+        color: rgb(0, 0, 0);
+        transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+    .top, .mid-bg, .bot-bg {
+        height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -93,10 +134,12 @@
     .top {
         background-image: url(assets/41.png);
     }
-    .mid-bg{
+
+    .mid-bg {
         background-image: url(assets/42.png);
     }
-    .bot-bg{
+
+    .bot-bg {
         background-image: url(assets/43.png);
     }
 </style>
