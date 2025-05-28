@@ -1,17 +1,80 @@
-<div class="header">
+body{
+        scroll-behavior: smooth;
+    }
 
-                <div class="title">
-                <img src="assets/Ferrari Logo.png" alt="Ferrari Logo">
-                <span class="title-text">Ferrari x Schumacher</span>
-                </div>
+    .yellow-title{
+        color: #FFFF00;
+        font-size: 48px;
+        margin-left: 100px;
+    }
 
-                <div class="nav">
-                    <a href="backgroundtest.html">HOME</a>
-                    <a href="">GARAGE</a>
-                </div>
-            </div>
+    .white-text{
+        color: white;
+        font-size: 24px;
+        width: 50%;
+        margin-left: 100px;
+    }
 
-            .header{
+    .bg{
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .top{
+        background-image: url(assets/rectop.png);
+        background-size: 100%;
+        /* background-color:    rgb(43, 112, 172); */
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        position: absl;
+        top: 0%;
+        left: 0%;
+        height: 690px;
+        /* margin: -1%; */
+ 
+    }
+
+    .title{
+        display: flex;
+        align-items: center;
+    }
+
+    .title {
+    width: 45px;
+    height: auto;
+    margin-right: 10px;
+    }
+
+    .prtn {
+        background-image: url(assets/prtn-profile.png);
+        /* background-position:center; */
+        position:relative;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-width: auto;
+        height: 100vh;
+        margin-top: -3%;
+        margin-left: -10px;
+        margin-right: -10px;
+        display: flex;
+    }
+
+    .shum{
+        background-image: url(assets/michael.png);
+        background-position: bottom right;
+    }
+
+
+    .title-text {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        white-space: nowrap;
+    }
+
+    .header {
         display: flex;
         justify-content: space-between; /* This puts nav on the right */
         align-items: center;
@@ -30,4 +93,47 @@
         height: auto; 
         margin-right: 19px;
         margin-left: 20px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+    .nav a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    .nav a:hover {
+        background-color: green;
+        color: rgb(0, 0, 0);
+        transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    }
+
+    .car{
+        background-image: url(assets/career.png);
+        background-position: bottom 100% center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-width: auto;
+        height: 100vh;
+        margin-top: -3%;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+
+    .stats{
+        background-image: url(assets/Ferrari\ Wins.png);
+        background-position: bottom 100% center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        min-width: auto;
+        height: 100vh;
+        margin-top: -3%;
+        margin-left: -10px;
+        margin-right: -10px;
     }
