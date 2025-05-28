@@ -19,18 +19,32 @@
 
     .specs-container {
         position: absolute;
-        top: 90vh; /* Adjust this value to control vertical position */
+        top: 80vh; /* Adjust this value to control vertical position */
         left: 50px;
+        margin-left: 5%;
     }   
 
     .specs-con {
+        width: 58%;
+        display: flex;
         position: absolute;
         top: 120vh; /* Adjust this value to control vertical position */
         left: 50px;
+        line-height: 45px;
+        font-size: 36px;
+    }
+
+
+    .spc-div p{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #FFFF00;
+        font-size: 120px;
+        
     }
     
     .spc-div {
-        font-size: 400%;
         display: flex;
         align-items: center; /* Aligns items vertically in the center */
         flex-direction: row;
@@ -38,8 +52,8 @@
     }
 
     .spc-div img {
-        width: 50px;
-        height: 50px; 
+        width: 75px;
+        height: 75px; 
         margin-left: 20px; /* Space between text and image */
     }
 
@@ -163,16 +177,19 @@
 
     .track {
         position: absolute;
-        top: 215vh; /* Adjust as needed */
-        left: 50px;
+        top: 250vh; /* Adjust as needed */
+        left: 45%;
+        transform: translate(-50%, -50%);
         display: flex;
+        
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 50px; /* Space between map and text */
     }
 
     .track-map {
-        width: 300px; /* Adjust size as needed */
+        width: 100vh; /* Adjust size as needed */
         height: auto;
     }
 
@@ -180,6 +197,22 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 4vh;
+    }
+
+    .track-name {
+        font-size: 5vh;
+        font-weight: bold;
+    }
+    
+    .tdets{
+        font-size: 3vh;
+    }
+
+    .track-name,
+    .track-details p {
+        margin: 0;
+        line-height: 1;
     }
 
 
