@@ -18,6 +18,13 @@
     }
 
     
+    .specs-container {
+        position: absolute;
+        bottom: 200px; /* Increase this value to move it higher */
+        left: 50px;
+    }
+
+    
     .spc-div {
         font-size: 400%;
         display: flex;
