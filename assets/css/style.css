@@ -1,0 +1,133 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+
+
+:root{
+
+ /* ============ font and typo ===========    */
+    --primary-font: "Alexandria", sans-serif;
+    --logo-fs: 20px;
+
+    --h1-fs: 6rem;
+    --h2-fs: 3rem;
+    --h3-fs: 3rem;
+    --p-fs: 1rem;
+
+    --logo-fw: bold;
+    --h1-fw: medium;
+    --h2-fw: bold;
+    --h3-fw: bold;
+    
+/* ============ colors ===========    */
+
+    --color1-red:#980000;
+    --color2-yellow:#FFF000;
+    --color3-white: #d9d9d9;
+    --color4-gray:#BCBCBC;
+    --color5-dark:#1E1317;
+
+}
+
+/* ===== BASE ==== */
+
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {text-decoration: none;
+    color:var(--color3-white) ;}
+
+li { list-style: none; }
+
+body{
+    font-family: var(--primary-font);
+
+}
+
+/* ===REUSED STYLE==== */
+
+
+h1{
+    font-family: var(--primary-font) ;
+    color: var(--color2-yellow);
+    font-size: var(--h1-fs);
+    font-weight: var(--h1-fw);
+    }
+
+h2{
+    font-family: var(--primary-font) ;
+    color: var(--color2-yellow);
+    font-size: var(--h2-fs);
+    font-weight: var(--h2-fw);
+
+}
+h3{
+
+    font-family: var(--primary-font) ;
+    color: var(--color2-yellow);
+    font-size: var(--h3-fs);
+    font-weight: var(--h3-fw);
+}
+
+p{
+    font-family: var(--primary-font) ;
+    color: var(--color2-yellow);
+    font-size: var(--p-fs);
+    font-weight:normal;
+}
+
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+/* ====header==== */
+
+.header{
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    padding: 50px;
+
+
+}
+
+.header img{
+    height:60px;
+    width: auto;
+}
+
+.logo{
+    color: var(--color3-white);
+    font-size: var(--logo-fs);
+    display: flex;
+    align-items: center;
+}
+.header .container{
+    color: var(--color3-white);
+    font-size: var(--logo-fs);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 100px;
+  }
+
+  .navbar-list{
+    color:var(--color3-white);
+    margin-bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  
+  
+
