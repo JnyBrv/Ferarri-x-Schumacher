@@ -26,13 +26,13 @@
                 <a href="f12004.html">F12004</a>    
             </div>
 
-            <div class="spc-div">
+            <div class="yellow-title spc-div">
                 <img src="" alt="">
                 <p>SPECS</p>
                 <img src="" alt="">
             </div>
                 
-            <div class="specs">
+            <div class="white-text specs">
                 <p>🔥 Horsepower: ~835 hp
                     🚀 Top Speed: ~360+ km/h (224+ mph)
                     🛠️ Engine: Ferrari Tipo 051, 3.0L V10
@@ -41,7 +41,7 @@
                     ever — won 15 out of 17 races!</p>
             </div>
 
-            <div class="win-div">
+            <div class="yellow-title win-div">
                 <img src="" alt="">
                 <p>SPECS</p>
                 <img src="" alt="">
@@ -50,14 +50,14 @@
                 <div class="track">
                     <img src="" alt="">
                     <div>
-                        <p>Circuit de Monaco</p>
-                        <p>Monte Carlo, Monaco</p>
-                        <p>May 27, 2001</p>
+                        <p class="yellow-title">Circuit de Monaco</p>
+                        <p class="white-text">Monte Carlo, Monaco</p>
+                        <p class="white-text">May 27, 2001</p>
                     </div>
                     <div>
-                        <p>Laps: 56</p>
-                        <p>Pole Pos.: 1:35.266</p>
-                        <p>Points: 10</p> 
+                        <p class="white-text">Laps: 56</p>
+                        <p class="white-text">Pole Pos.: 1:35.266</p>
+                        <p class="white-text">Points: 10</p> 
                     </div>
                 </div>
         </div>
@@ -120,10 +120,18 @@
         white-space: nowrap;
     }
 
-    nav {
+    .nav, .tNav{
         margin-right: 20px;
     }
 
+    .nav {
+        margin-left: 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    
     .nav a {
         margin-left: 15px;
         text-decoration: none;
@@ -131,8 +139,16 @@
         font-weight: bold;
         margin-right: 20px;
     }
+    
+    .tNav a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 20px;
+    }
 
-    .nav a:hover {
+    .nav a:hover, .tNav a:hover {
         background-color: green;
         color: rgb(0, 0, 0);
         transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
