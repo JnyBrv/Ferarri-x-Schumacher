@@ -3,7 +3,25 @@
         margin: 0;
         padding: 0;
         font-family: Alexandria;
+        background-color: black;
     }
+
+    
+    body {
+    opacity: 0;
+    }
+
+    body.fade-in {
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+
+    body.fade-out {
+        opacity: 0;
+        transition: opacity 2s ease-out;
+    }
+
+
 
     .upper{
         display: flex;
@@ -24,37 +42,75 @@
         margin-left: 5%;
     }   
 
-    .specs-con {
-        width: 58%;
-        display: flex;
-        position: absolute;
-        top: 120vh; /* Adjust this value to control vertical position */
-        left: 50px;
-        line-height: 45px;
-        font-size: 36px;
-    }
-
+   
 
     .spc-div p{
-        display: flex;
         align-items: center;
         gap: 20px;
         color: #FFFF00;
         font-size: 120px;
+        z-index: 1;
+    }
+
+    .specs-bg{
+        position: absolute;
+        top: 100vh;
+        position: absolute;
+        width: 51vw; /* Adjust width as needed */
+        height: 100vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        backdrop-filter: blur(10px); /* Applies blur to background */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        pointer-events: none; /* Allows clicks to pass through */  
+
+    }
+
+    .spec-con-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        width: 100vw; /* Adjust width as needed */
+        height: 100vh;
+
+        font-size: 36px;
+        color: white;
+        margin: 0;
+
+        margin-left: 100px;
+    }
+
+    .spec-row {
+        display: flex;
+    
+    }
+    
+    .spec-text {
+        display: block;
+    }
+
+    .icon {
+        width: 300px;
+    }
+
+    .spec-text {
         
     }
+
     
     .spc-div {
         display: flex;
         align-items: center; /* Aligns items vertically in the center */
         flex-direction: row;
         justify-content: flex-start; /* Better than 'left' */
+        
     }
 
     .spc-div img {
         width: 75px;
         height: 75px; 
         margin-left: 20px; /* Space between text and image */
+        z-index: 1;
     }
 
     .tnav-bg {
@@ -70,15 +126,12 @@
     }
 
     .spec-con {
-        position: absolute;
-        top: 120vh; /* Adjust this value to control vertical position */
-        left: 50px;
-        font: 200px;
+        
     }
 
   
     .tNav{
-        text-align: right;
+        text-align: center;
         font-size: 400%;
         gap: 40px; 
         display: grid;
@@ -114,7 +167,7 @@
         display: flex;
         justify-content: space-between; /* This puts nav on the right */
         align-items: center;
-        padding: 10px 15px;
+        
         
         /* background-color: brown; */
         color: white;
@@ -141,38 +194,34 @@
     }
 
     .title-text {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         color: white;
         white-space: nowrap;
     }
 
-    .nav, .tNav{
-        margin-right: 20px;
-    }
-
     .nav {
-        margin-left: 15px;
+        font-size: 20px;
         text-decoration: none;
         color: white;
         font-weight: bold;
-        margin-right: 20px;
+        margin-right: 10vw;
+        
     }
     
     .nav a {
-        margin-left: 15px;
+        margin-left: 75px;
         text-decoration: none;
         color: white;
         font-weight: bold;
-        margin-right: 20px;
+        transition: transform 0.3s ease, color 0.3s ease;
+        transform-origin: center;
+        display: inline-block
     }
 
-    
-
     .nav a:hover {
-        background-color: green;
-        color: rgb(0, 0, 0);
-        transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        color: yellow;
+        transform: scale(1.2); 
     }
 
     .track {
@@ -245,16 +294,6 @@
         background-position: center;
     }
 
-    .top {
-        background-image: url(assets/01.png);
-    }
-
-    .mid-bg {
-        background-image: url(assets/02.png);
-    }
-
-    .bot-bg {
-        background-image: url(assets/03.png);
-    }
+    
 
     

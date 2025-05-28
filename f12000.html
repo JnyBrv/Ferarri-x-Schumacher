@@ -3,9 +3,12 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Title>Ferrari x Shumacher</Title>
+
         <link rel="stylesheet" href="garage.css">
     </head>
     <body>
+        <script src="script.js"></script>
+
         <div class="top">
              <div class="header">   
                 <div class="title">
@@ -14,7 +17,7 @@
                 </div>
 
                 <div class="nav">
-                    <a href="backgroundtest.html">HOME</a>
+                    <a href="backgroundtest.html" class="transition-link">HOME</a>
                     <a href="f12000.html">GARAGE</a>
                 </div>
             </div>
@@ -24,11 +27,11 @@
 
                 <div class="tnav-bg">
                     <div class="tNav">
-                    <a href="f12000.html">F1 2000</a>
-                    <a href="f12001.html">F1 2001</a>
-                    <a href="f12002.html">F1 2002</a>
-                    <a href="f12003.html">F1 2003</a>
-                    <a href="f12004.html">F1 2004</a>    
+                    <a href="f12000.html" class="transition-link">F1 2000</a>
+                    <a href="f12001.html" class="transition-link">F1 2001</a>
+                    <a href="f12002.html" class="transition-link">F1 2002</a>
+                    <a href="f12003.html" class="transition-link">F1 2003</a>
+                    <a href="f12004.html" class="transition-link">F1 2004</a>    
                     </div>
                 </div>
                 
@@ -44,16 +47,34 @@
             </div>
                 
                 
-            <div class="specs-bg yellow-title">
-                <p class="specs-con white-text">🔥 Horsepower: ~865–900 hp 
-                    <br>
-                    🚀 Top Speed: ~370+ km/h (230 mph) — fastest of the V10 era
-                    <br>
-                    🛠️ Engine: Ferrari Tipo 053, 3.0L V10
-                    <br>
-                    ⚙️ Gearbox: Lightning-fast titanium 7-speed
-                    <br>
-                    🧠 Cool Fact: Set numerous lap records still standing at some circuits — considered Schumacher's ultimate machine.</p>
+            <div class="specs-bg">
+                <div class="spec-con-container">
+                    <div class="spec-row">
+                        <p class="icon">🔥 Horsepower:</p>
+                        <p class="spec-text">865–900 hp</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">🚀 Top Speed:</p>
+                        <p class="spec-text">370+ km/h</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">🛠️ Engine:</p>
+                        <p class="spec-text">Ferrari Tipo 053, 3.0L V10</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">⚙️ Gearbox:</p>
+                        <p class="spec-text">Lightning-fast titanium 7-speed</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">🧠 Cool Fact:</p>
+                        <p class="spec-text">Set numerous lap records still
+                            <br> standing at some circuits — 
+                            <br> considered Schumacher's 
+                            <br> ultimate machine.</p>
+                    </div>
+                </div>
+
+                
             </div>
             
             <div class="win-div"> 
@@ -88,3 +109,16 @@
     </body>
 </html>
 
+<style>
+    .top {
+        background-image: url(assets/01.png);
+    }
+
+    .mid-bg {
+        background-image: url(assets/02.png);
+    }
+
+    .bot-bg {
+        background-image: url(assets/03.png);
+    }
+</style>

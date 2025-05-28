@@ -3,8 +3,12 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Title>Ferrari x Shumacher</Title>
+
+        <link rel="stylesheet" href="garage.css">
     </head>
     <body>
+        <script src="script.js"></script>
+
         <div class="top">
              <div class="header">   
                 <div class="title">
@@ -13,49 +17,91 @@
                 </div>
 
                 <div class="nav">
-                    <a>HOME</a>
-                    <a href="#prf">PROFILE</a>
-                    <a href="#crr">CAREER</a>
+                    <a href="backgroundtest.html" class="transition-link">HOME</a>
                     <a href="f12000.html">GARAGE</a>
                 </div>
             </div>
+            
+            <div class="upper">
+                <div class="space-up"></div>
 
-              <div class="tNav">
-                    <a href="f12000.html">F1 2000</a>
-                    <a href="f12001.html">F1 2001</a>
-                    <a href="f12002.html">F1 2002</a>
-                    <a href="f12003.html">F1 2003</a>
-                    <a href="f12004.html">F1 2004</a>    
-                </div>
-
-                <div class="spc-div">
-                    <img src="" alt="">
-                    <p>SPECS</p>
-                    <img src="" alt="">
-                </div>
-                
-                <div class="specs">
-                    <p>🔥 Horsepower: ~865–900 hp
-                        🚀 Top Speed: ~370+ km/h (230 mph) — fastest of the V10 era
-                        🛠️ Engine: Ferrari Tipo 053, 3.0L V10
-                        ⚙️ Gearbox: Lightning-fast titanium 7-speed
-                        🧠 Cool Fact: Set numerous lap records still standing at some circuits — considered Schumacher's ultimate machine.</p>
-                </div>
-                
-                <div class="track">
-                    <img src="" alt="">
-                    <div>
-                        <p>Circuit de Nevers Magny-Cours</p>
-                        <p>Magny-Cours, France</p>
-                        <p>July 6, 2003</p>
-                    </div>
-                    <div>
-                        <p>Laps: 70</p>
-                        <p>Pole Pos.: 1:30:18.133</p>
-                        <p>Points: 10</p> 
+                <div class="tnav-bg">
+                    <div class="tNav">
+                    <a href="f12000.html" class="transition-link">F1 2000</a>
+                    <a href="f12001.html" class="transition-link">F1 2001</a>
+                    <a href="f12002.html" class="transition-link">F1 2002</a>
+                    <a href="f12003.html" class="transition-link">F1 2003</a>
+                    <a href="f12004.html" class="transition-link">F1 2004</a>    
                     </div>
                 </div>
                 
+                
+                
+            </div >
+            
+            <div class = "specs-container">
+                <div class="yellow-title spc-div">
+                <p>SPECS</p>
+                <img src="assets/down.png" alt="down-arrow">
+                </div>
+            </div>
+                
+                
+            <div class="specs-bg">
+                <div class="spec-con-container">
+                    <div class="spec-row">
+                        <p class="icon">🔥 Horsepower:</p>
+                        <p class="spec-text">865–900 hp</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">🚀 Top Speed:</p>
+                        <p class="spec-text">370+ km/h</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">🛠️ Engine:</p>
+                        <p class="spec-text">Ferrari Tipo 053, 3.0L V10</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">⚙️ Gearbox:</p>
+                        <p class="spec-text">Lightning-fast titanium 7-speed</p>
+                    </div>
+                    <div class="spec-row">
+                        <p class="icon">🧠 Cool Fact:</p>
+                        <p class="spec-text">Set numerous lap records still
+                            <br> standing at some circuits — 
+                            <br> considered Schumacher's 
+                            <br> ultimate machine.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+            <div class="win-div"> 
+                <img src="assets/down.png" alt="down-arrow">
+                <p>Winning Map</p>
+                <img src="assets/down.png" alt="down-arrow">
+            </div>
+            
+            <div class="track">
+                <img src="assets/Suzuka circuit.png" alt="Suzuka circuit" class = "track-map">
+                
+                <div class="track-details">
+
+                    <div class="main-details">
+                        <p class="track-name yellow-title">Suzuka International Racing Course</p>
+                        <p class="tdets white-text">Magny-Cours, France</p>
+                        <p class="tdets white-text">July 6, 2003</p>
+                    </div>
+
+                    <div class="sub-details">
+                        <p class="tdets white-text">Laps: 70</p>
+                        <p class="tdets white-text">Pole Pos.: 1:30:18.133</p>
+                        <p class="tdets white-text">Points: 10</p> 
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <div class="mid-bg"></div>
@@ -64,82 +110,15 @@
 </html>
 
 <style>
-    html, body{
-        margin: 0;
-        padding: 0;
-        font-family: Alexandria;
-    }
-
-    .header{
-        display: flex;
-        justify-content: space-between; /* This puts nav on the right */
-        align-items: center;
-        padding: 10px 15px;
-        
-        /* background-color: brown; */
-        color: white;
-      
-        border: 0px;
-        border-bottom: 5px;
-        border-style: solid;
-    }
-
-    .header img {
-        width: 60px;
-        height: auto; 
-        margin-right: 19px;
-        margin-left: 20px;
-    }
-    
-    .title{
-        display: flex;
-        width: 45px;
-        height: auto;
-        margin-right: 10px;
-        align-items: center;
-    }
-
-    .title-text {
-        font-size: 20px;
-        font-weight: bold;
-        color: white;
-        white-space: nowrap;
-    }
-
-    nav {
-        margin-right: 20px;
-    }
-
-    .nav a {
-        margin-left: 15px;
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        margin-right: 20px;
-    }
-
-    .nav a:hover {
-        background-color: green;
-        color: rgb(0, 0, 0);
-        transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
-    }
-
-    .top, .mid-bg, .bot-bg {
-        height: 100vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
     .top {
-        background-image: url(assets/31.png);
+        background-image: url(assets/11.png);
     }
 
     .mid-bg {
-        background-image: url(assets/32.png);
+        background-image: url(assets/12.png);
     }
 
     .bot-bg {
-        background-image: url(assets/33.png);
+        background-image: url(assets/13.png);
     }
 </style>
