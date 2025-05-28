@@ -17,16 +17,56 @@
         height: auto;
     }
 
+    
+    .spc-div {
+        font-size: 400%;
+        display: flex;
+        align-items: center; /* Aligns items vertically in the center */
+        flex-direction: row;
+        justify-content: flex-start; /* Better than 'left' */
+    }
+
+    .spc-div img {
+        width: 50px;
+        height: 50px; 
+        margin-left: 20px; /* Space between text and image */
+    }
+
+    .tnav-bg {
+        margin: 0;
+        width: 40vh;
+        height: 89vh;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 50px; 
+
+    }
+
     .tNav{
         text-align: right;
         font-size: 400%;
+        gap: 40px; 
         display: grid;
-        margin: 10%;
     }
+
+    .tNav a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s ease, color 0.3s ease;
+        display: inline-block;
+        transform-origin: right center; 
+    }
+
+    .tNav a:hover{
+        transform: scale(1.2); 
+        color: yellow;
+    }   
 
     .yellow-title{
         color: #FFFF00;
-        font-size: 48px;
         margin-left: 100px;
     }
 
