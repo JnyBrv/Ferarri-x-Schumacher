@@ -3,12 +3,16 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Title>Ferrari x Shumacher</Title>
-
+        <link href="aos.css" rel="stylesheet">
         <link rel="stylesheet" href="garage.css">
     </head>
     <body>
         <script src="script.js"></script>
-
+        
+        <script src="aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <div class="top">
              <div class="header">   
                 <div class="title">
@@ -27,11 +31,11 @@
 
                 <div class="tnav-bg">
                     <div class="tNav">
-                    <a href="f12000.html" class="transition-link">F1 2000</a>
-                    <a href="f12001.html" class="transition-link">F1 2001</a>
-                    <a href="f12002.html" class="transition-link">F1 2002</a>
-                    <a href="f12003.html" class="transition-link">F1 2003</a>
-                    <a href="f12004.html" class="transition-link">F1 2004</a>    
+                    <a href="f12000.html" data-aos="fade-left">F1 2000</a>
+                    <a href="f12001.html" data-aos="fade-left">F1 2001</a>
+                    <a href="f12002.html" data-aos="fade-left">F1 2002</a>
+                    <a href="f12003.html" data-aos="fade-left">F1 2003</a>
+                    <a href="f12004.html" data-aos="fade-left">F1 2004</a>    
                     </div>
                 </div>
                 
@@ -39,7 +43,7 @@
                 
             </div >
             
-            <div class = "specs-container">
+            <div class = "specs-container" data-aos="fade-up">
                 <div class="yellow-title spc-div">
                 <p>SPECS</p>
                 <img src="assets/down.png" alt="down-arrow">
@@ -47,25 +51,25 @@
             </div>
                 
                 
-            <div class="specs-bg">
-                <div class="spec-con-container">
-                    <div class="spec-row">
+            <div class="specs-bg" data-aos="fade-right">
+                <div class="spec-con-container" >
+                    <div class="spec-row" data-aos="fade-right">
                         <p class="icon">🔥 Horsepower:</p>
                         <p class="spec-text">825 hp</p>
                     </div>
-                    <div class="spec-row">
+                    <div class="spec-row" data-aos="fade-right">
                         <p class="icon">🚀 Top Speed:</p>
                         <p class="spec-text">360 km/h</p>
                     </div>
-                    <div class="spec-row">
+                    <div class="spec-row" data-aos="fade-right">
                         <p class="icon">🛠️ Engine:</p>
                         <p class="spec-text">Ferrari Tipo 050, 3.0L V10</p>
                     </div>
-                    <div class="spec-row">
+                    <div class="spec-row" data-aos="fade-right">
                         <p class="icon">⚙️ Gearbox:</p>
                         <p class="spec-text">7-speed semi-automatic</p>
                     </div>
-                    <div class="spec-row">
+                    <div class="spec-row" data-aos="fade-right">
                         <p class="icon">🧠 Cool Fact:</p>
                         <p class="spec-text">First Ferrari to fully
                             <br> ntegrate electronic driver aids  
@@ -76,19 +80,19 @@
                 
             </div>
             
-            <div class="win-div"> 
-                <img src="assets/down.png" alt="down-arrow">
+            <div class="win-div" > 
+                <img src="assets/down.png" alt="down-arrow" >
                 <p>Winning Map</p>
                 <img src="assets/down.png" alt="down-arrow">
             </div>
             
             <div class="track">
-                <img src="assets/Suzuka circuit.png" alt="Suzuka circuit" class = "track-map">
+                <img src="assets/Suzuka circuit.png" alt="Suzuka circuit" class = "track-map" data-aos="flip-right">
                 
                 <div class="track-details">
 
                     <div class="main-details">
-                        <p class="track-name yellow-title">Suzuka International Racing Course</p>
+                        <p class="track-name yellow-title" >Suzuka International Racing Course</p>
                         <p class="tdets white-text">Magny-Cours, France</p>
                         <p class="tdets white-text">July 6, 2003</p>
                     </div>
