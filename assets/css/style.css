@@ -1,133 +1,457 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
 
 
-:root{
+:root {
 
- /* ============ font and typo ===========    */
+    --border1: solid 6px rgb(255, 114, 196);
+    --border2: solid 4px rgb(152, 210, 251);
+    --border3: solid 2px rgb(255, 255, 114);
+    --header-border: solid 2.5px var(--color3-white);
+
+    /* ============ font and typo ===========    */
     --primary-font: "Alexandria", sans-serif;
-    --logo-fs: 20px;
-
+    --logo-fs: 28px;
+    --nav-fs: 1.3rem;
+    --fs1: 1rem;
+    --fs2: 7rem;
     --h1-fs: 6rem;
     --h2-fs: 3rem;
     --h3-fs: 3rem;
-    --p-fs: 1rem;
+    --p-fs: 1.7rem;
 
     --logo-fw: bold;
     --h1-fw: medium;
     --h2-fw: bold;
     --h3-fw: bold;
-    
-/* ============ colors ===========    */
 
-    --color1-red:#980000;
-    --color2-yellow:#FFF000;
-    --color3-white: #d9d9d9;
-    --color4-gray:#BCBCBC;
-    --color5-dark:#1E1317;
+    /* ============ COLORS ===========    */
+
+    --color1-red: #980000;
+    --color2-yellow: #FFF000;
+    --color3-white: #f8f6f6;
+    --color4-gray: #f5f4f4;
+    --color5-dark: #1E1317;
 
 }
 
 /* ===== BASE ==== */
+body {
 
-*, *::before, *::after {
-    margin:0;
-    padding:0;
+    background: var(--color4-gray);
+
+
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-a {text-decoration: none;
-    color:var(--color3-white) ;}
-
-li { list-style: none; }
-
-body{
+a {
+    text-decoration: none;
     font-family: var(--primary-font);
+    color: var(--color3-white);
+    font-size: 1.7rem;
+}
 
+li {
+    list-style: none;
 }
 
 /* ===REUSED STYLE==== */
 
+header {
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 
-h1{
-    font-family: var(--primary-font) ;
+h1 {
+    font-family: var(--primary-font);
     color: var(--color2-yellow);
     font-size: var(--h1-fs);
     font-weight: var(--h1-fw);
-    }
+}
 
-h2{
-    font-family: var(--primary-font) ;
+h2 {
+    font-family: var(--primary-font);
     color: var(--color2-yellow);
     font-size: var(--h2-fs);
     font-weight: var(--h2-fw);
 
 }
-h3{
 
-    font-family: var(--primary-font) ;
+h3 {
+
+    font-family: var(--primary-font);
     color: var(--color2-yellow);
     font-size: var(--h3-fs);
     font-weight: var(--h3-fw);
 }
 
-p{
-    font-family: var(--primary-font) ;
-    color: var(--color2-yellow);
+p {
+    font-family: var(--primary-font);
+    color: var(--color3-white);
     font-size: var(--p-fs);
-    font-weight:normal;
+    font-weight: normal;
 }
 
-.navbar-list{
+section {
+    position: relative;
+}
+
+
+.navbar-list {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    
+
+}
+
+.container {
+    padding-inline: 15px;
 }
 
 /* ====header==== */
 
-.header{
-    top:0;
+/* TO DO: put header on top of the hero section  */
+.header {
+
+    position: absolute;
+    display: flex;
+    z-index: 1000;
+    top: 0;
     left: 0;
     width: 100%;
-    z-index: 4;
-    padding: 50px;
-
+    font-family: var(--primary-font);
+    /* justify-content: space-around; */
+    padding: 15px 100px 15px 100px;
+    border-bottom: var(--header-border);
 
 }
 
-.header img{
-    height:60px;
+.header img {
+    height: 60px;
     width: auto;
+
 }
 
-.logo{
+.logo {
     color: var(--color3-white);
     font-size: var(--logo-fs);
     display: flex;
     align-items: center;
+    gap: 25px;
 }
-.header .container{
+
+.header .container {
     color: var(--color3-white);
-    font-size: var(--logo-fs);
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0px 100px;
-  }
 
-  .navbar-list{
-    color:var(--color3-white);
+
+}
+
+.header .container a {
+    font-size: var(--nav-fs);
+}
+
+.navbar-list {
+    color: var(--color3-white);
     margin-bottom: 0;
     display: flex;
     justify-content: flex-end;
+    gap: 50px;
     align-items: center;
-  }
+}
 
-  
-  
 
+/* ===== HERO ====== */
+/* TO DO: Postion hero section underneath navbar */
+
+
+.hero {
+    top: -100px;
+    overflow: visible;
+    position: relative;
+    max-height: auto;
+    width: 100%;
+    padding: 250px 100px 0px 100px;
+    height: 95vh;
+    background: url(../images/hero.png) no-repeat;
+    background-size: cover;
+    background-position: 0% 70%;
+    z-index: 1;
+    margin-top: 0;
+}
+
+
+.hero .container p {
+
+    color: var(--color3-white);
+
+
+}
+
+.hero .container a {
+    color: var(--color3-white);
+    text-decoration: underline;
+
+}
+
+
+.hero .container {
+    position: relative;
+    display: flex;
+    flex: right;
+    overflow: hidden;
+    padding: 100px;
+    gap: 25px;
+    max-width: 50%;
+    flex-direction: column;
+    align-self: flex-end;
+
+}
+
+/*=========== #ABOUT =============== */
+
+.header-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 25px;
+    position: absolute;
+    top: -65px;
+    padding-inline-start: 200px;
+}
+
+.header-2 img {
+    width: auto;
+    height: 100%;
+    overflow: visible;
+
+}
+
+.about {
+    top: -150px;
+    background: url(../images/about.png) no-repeat;
+    overflow: visible;
+    position: relative;
+    max-height: auto;
+    width: 100%;
+    padding: 200px 100px 0px 100px;
+    height: 80vh;
+    background-size: cover;
+    background-position: 0% 70%;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.about .container {
+    position: relative;
+    display: flex;
+    flex: right;
+    overflow: hidden;
+    padding: 100px;
+    gap: 50px;
+    max-width: 50%;
+    flex-direction: column;
+    justify-self: flex-end;
+    text-align: right;
+}
+
+/*======#PROFILE======= */
+
+.profile {
+
+    position: relative;
+    top: -150px;
+    background: var(--color1-red);
+    max-height: 300px;
+    width: 100%;
+
+}
+
+.profile .header-2 {
+    top: -180px;
+    gap: 1.5px;
+    flex-direction: column;
+
+}
+
+.profile .container {
+    position: relative;
+    top: -300px;
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 200px;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-end;
+    z-index: 4;
+
+}
+
+.profile .container p {
+    margin: 100px;
+    ;
+    text-align: justify;
+    max-width: 50%;
+
+}
+
+.profile a {
+    display: absolute;
+    text-decoration: underline;
+    z-index: 4;
+    overflow: visible;
+    justify-self: center;
+    width: 60%;
+    text-align: right;
+    padding: 25px;
+
+}
+
+/*======== #CAREER========= */
+
+
+.career {
+    position: relative;
+    background: url(../images/career.png) no-repeat;
+    background-size: cover;
+    background-position: 0% 70%;
+    z-index: 1;
+    top: -150px;
+    width: 100%;
+    height: 95vh;
+    padding: 250px;
+    gap: 50px;
+}
+
+.career .container {
+    width: 100%;
+    justify-content: space-around;
+    align-self: center;
+    padding: 100px;
+    gap: 25px;
+}
+
+.career .container h1 {
+    text-align: left;
+    padding-inline: 1em;
+}
+
+.career p {
+
+    justify-self: center;
+    text-align: justify;
+    margin-top: 50px;
+    padding-inline: 10em;
+    width: 100%;
+}
+
+
+/* =========#GARAGE========= */
+
+
+.garage {
+    display: block;
+    top: -150px;
+    position: relative;
+    background: var(--color1-red);
+    color: var(--color3-white);
+    width: 100%;
+
+}
+
+.garage .container {
+
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    padding: 100px 0px 50px 0px;
+    justify-content: center;
+    justify-self: center;
+    gap: 10vw;
+}
+
+
+.garage .left {
+
+
+    z-index: 2;
+    overflow: visible;
+    display: block;
+
+
+
+}
+
+.garage .right {
+    display: block;
+
+    z-index: 4;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-self: flex-end;
+    width: 20%;
+    text-align: right;
+    align-items: flex-end;
+
+
+}
+
+.garage h1 {
+    font-size: var(--fs2);
+    color: var(--color3-white);
+}
+
+.garage a {
+    text-decoration: underline;
+}
+
+.garage img {
+
+    z-index: 3;
+    display: flex;
+    position: absolute;
+    translate: 0% 25%;
+    align-content: center;
+    width: auto;
+    height: 100%
+}
+
+.sponsors {
+    overflow: visible;
+    top: -150px;
+    height: max-content;
+    bottom: 0;
+    position: relative;
+    justify-content: flex-end;
+    padding: 300px 100px 100px 100px;
+    background: var(--color4-gray);
+}
+
+.sponsors .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.sponsors .container img {
+    height: 100%;
+    width: auto;
+}
