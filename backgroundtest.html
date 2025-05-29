@@ -22,58 +22,69 @@
             </div>
 
             <div class="Intro">
-                 <p class="white-text">FERRARI X SCHUMACHER</p>
-                 <p class="yellow-title">A Legacy Forged 
-                in Maranello</p>
-                 <p class="white-text">From the moment Michael Schumacher donned the Rosso 
-                Corsa in 1996, he and Ferrari rewrote the record books. 
-                Explore their journey: the victories, the innovations, 
-                and the bond that transcended motorsport.</p>
-                 <a href="" class="white-text">DISCOVER THE TIMELINE → </a>
+                 <p class="intro-hl wt">FERRARI X SCHUMACHER</p>
+                 <p class="h2 yt bold">A Legacy Forged <br>
+                    in Maranello</p>
+                 <p class="intro-con wt">From the moment Michael Schumacher donned the Rosso <br>
+                    Corsa in 1996, he and Ferrari rewrote the record books. <br>
+                    Explore their journey: the victories, the innovations, <br>
+                    and the bond that transcended motorsport.</p>
             </div>
 
-            <div class="yellow-title">
-                <p>ABOUT</p> 
+            <div class="abt">
+                <p class="h3 yt">ABOUT</p> 
+                <img src="assets/down.png" alt="">
             </div>
 
             <div class="prtn-intro">
-                <p class="yellow-title">A PARTNER LIKE NO OTHER</p>
-                <p class="white-text">When Michael Schumacher joined Ferrari in late 1995,
-                    the team had endured nearly two decades without a 
-                    Drivers’ Championship.
-                    Over the next nine seasons (1996–2006),
-                    Schumacher’s record-breaking 
-                    five straight world titles (2000–2004) would 
-                    revive the Prancing Horse and cement his status as 
-                    the sport’s greatest. This site honors their shared 
-                    milestones, technical innovations, and the spirit of 
-                    excellence that defined an era.</p>
+                <div class="prtn-spc"></div>
+                <div class="prt-text">
+                    <p class="h2 yt">A PARTNER LIKE NO OTHER</p>
+                    <p class="prtn-con wt">When Michael Schumacher joined Ferrari in late 1995,
+                        the team had endured nearly two decades without a 
+                        Drivers’ Championship.
+                        Over the next nine seasons (1996–2006),
+                        Schumacher’s record-breaking 
+                        five straight world titles (2000–2004) would 
+                        revive the Prancing Horse and cement his status as 
+                        the sport’s greatest. This site honors their shared 
+                        milestones, technical innovations, and the spirit of 
+                        excellence that defined an era.</p>
+                </div>
+                
             </div>
 
             <div class="prof" id="prf">
-
-                <p class="yellow-title">PROFILE</p>
-                <p class="white-text"> MICHAEL SCHUMACHER</p>
-                <p class="white-text"> 3 January 1969, Hürth, Germany</p>
-                <p class="white-text">Michael Schumacher (b. 1969) is a German F1 icon who 
+                <div class="prof-tit">
+                    <p class="yt pp">PROFILE</p>
+                    <p class="h2 mich"> MICHAEL SCHUMACHER</p>
+                    <p class="wt"> 3 January 1969, Hürth, Germany</p>
+                </div>
+                <div class="prof-det">
+                    <p class="wt mc-text">Michael Schumacher (b. 1969) is a German F1 icon who 
                     propelled Ferrari to five straight drivers’ titles 
                     (2000–2004) and six constructors’ crowns (2000–2005). 
                     His relentless work ethic and technical mastery reshaped 
                     the sport’s standards.</p>
+                </div>
+                
+                
             </div> 
 
             <div class="car" id="crr">
-                <p class="yellow-title">CAREER</p>
-                <p class="white-text">From Michael Schumacher’s karting triumphs as a rising
-                    prodigy to his domination of Formula 1, this section 
-                    charts the full timeline of his racing 
-                    career—highlighting each championship victory, 
-                    tally of podium finishes, and unforgettable moments on 
-                    track. Delve into the milestones that turned a young 
-                    talent into a record-breaking legend.</p>
-                <p class="white-text">Read more  →</p>
+                <p class="h3 yt">CAREER</p>
+                <p class="car-cont wt">From Michael Schumacher’s karting triumphs as a rising 
+                    prodigy to his domination of Formula 1, this section charts the
+                    full timeline of his racing career—highlighting each
+                    championship victory, tally of podium finishes, and
+                    unforgettable moments on track. Delve into the milestones
+                    that turned a young talent into a record-breaking legend.
+                    </p>
              </div>
 
+            <div class="garage wt">
+                <a href="f12000.html" class="transition-link">Go to garage →</a>
+            </div>
         </div>
 
 
@@ -91,20 +102,7 @@
         margin: 0;
         padding: 0;
         font-family: Alexandria;
-    }
-
-    .yellow-title{
-        color: #FFFF00;
-        font-size: 48px;
-        margin-left: 100px;
-    }
-
-
-    .white-text{
-        color: white;
-        font-size: 24px;
-        width: 50%;
-        margin-left: 100px;
+        background-color: black;
     }
 
     .header{
@@ -154,16 +152,166 @@
         color: white;
         font-weight: bold;
         margin-right: 20px;
+        transition: transform 0.3s ease, color 0.3s ease;
+        display: inline-block;
+        transform-origin: center;
     }
 
     .nav a:hover {
-        background-color: green;
-        color: rgb(0, 0, 0);
-        transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+        transform: scale(1.2); 
+        color: yellow;
     }
 
     .Intro {
-        margin-top: 5%;
+        margin-left: 10%;
+        height: 76vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .intro-hl{
+
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .h3 {
+        font-size: 96px;
+    }
+
+    .h2{
+        font-size: 64px;
+    }
+
+    .yt{
+        color: #FFFF00;
+    }
+
+    .pp{
+        font-size: 42px;
+    }
+
+    .wt{
+        color: white;
+        font-size: 32px;
+    }
+
+    .mich  {
+        color: white;
+        font-size: 64px;
+    }
+    
+    .h2, .h3, .yt, .wt, .pp {
+        margin: 0; /* Reset default margins */
+        padding: 10px; /* Reset default padding */
+    }
+
+    .mc-text{
+        width: 50vw;
+    }
+
+
+    .abt{
+        position: absolute;
+        display: flex;
+        top: 93vh;
+        flex-direction: row;
+        left: 50px;
+        margin-left: 5%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .prtn-intro {
+        height: 70vh;
+        width: 100vw;
+        top: 150vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 120px;
+    }
+
+    .prtn-spc{
+        width: 50px;
+        height: auto;
+    }
+
+    .prtn-con {
+        width:950px;
+        margin:0;
+        padding: 0%;
+    }
+    
+    .prt-text p {
+        text-align: right;
+    }
+
+    .prt-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 50px; 
+    }
+
+    
+    .prof{
+        position: absolute;
+        display: flex;
+        top: 183vh;
+        flex-direction: column;
+        left: 50px;
+        margin-left: 4%;
+        align-items: left;
+    }
+
+    .prof-tit p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2; /* Optional: adjust spacing between lines */
+    }
+
+
+    .prof-det{
+        margin-top: 8%;
+    }
+
+    .car{
+        position: absolute;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        top: 235vh;
+        flex-direction: column;
+        justify-content: center;
+        left: 18%;
+        align-items: left;
+        gap: 5%;
+    }
+
+    .car-cont{
+        margin-left: 10%;
+        width: 50vw;
+        text-align: justify;
+    }
+
+    .garage {
+        top: 388vh;
+        position: absolute;
+        bottom: 40px; /* distance from bottom of the section */
+        right: 90px;  /* distance from right edge */
+        z-index: 10;  /* ensures it's above the background */
+    }
+
+    .garage a {
+        color: white;
+        text-decoration: underline;
+        font-size: 24px;
+        font-weight: bold;
     }
 
 
@@ -176,6 +324,10 @@
         background-position: center;
     }
 
+    body.fade-in {
+        opacity: 1;
+        transition: opacity 1s ease-in;
+    }
     
 
     /* background urls */
@@ -184,8 +336,20 @@
     }
 
     .partner {
-        background-image: url(assets/about.png);
+        background-image: url(assets/shumacher.png);
+        background-repeat: no-repeat;
+        background-size: contain; /* or 'contain' if you want full image visible */
+        background-position: center;
+        width: 100vw;
+        min-height: 140vh; /* or more, depending on how tall you want it */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
+        
+    
 
     .career {
         background-image: url(assets/career.png);
@@ -193,6 +357,16 @@
 
     .wins {
         background-image: url(assets/Ferrari-Wins.png);
+        background-repeat: no-repeat;
+        background-size: contain; /* or 'contain' if you want full image visible */
+        background-position: center;
+        width: 100vw;
+        min-height: 141vh; /* or more, depending on how tall you want it */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 
 </style>
