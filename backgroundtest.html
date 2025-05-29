@@ -3,9 +3,20 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <Title>Ferrari x Shumacher</Title>
+        <link href="aos.css" rel="stylesheet">
     </head>
     <body>
+        
+        <link rel="icon" type="image/png" href="assets/Ferrari Logo.png">
+        
+        
+        <script src="aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
         <script src="script.js"></script>
+
         <div class="Top">
             <div class="header">   
                 <div class="title">
@@ -22,25 +33,25 @@
             </div>
 
             <div class="Intro">
-                 <p class="intro-hl wt">FERRARI X SCHUMACHER</p>
-                 <p class="h2 yt bold">A Legacy Forged <br>
+                 <p class="intro-hl wt" data-aos="fade-up">FERRARI X SCHUMACHER</p>
+                 <p class="h2 yt bold" data-aos="fade-up">A Legacy Forged <br>
                     in Maranello</p>
-                 <p class="intro-con wt">From the moment Michael Schumacher donned the Rosso <br>
+                 <p class="intro-con wt" data-aos="fade-up">From the moment Michael Schumacher donned the Rosso <br>
                     Corsa in 1996, he and Ferrari rewrote the record books. <br>
                     Explore their journey: the victories, the innovations, <br>
                     and the bond that transcended motorsport.</p>
             </div>
 
-            <div class="abt">
+            <div class="abt" >
                 <p class="h3 yt">ABOUT</p> 
                 <img src="assets/down.png" alt="">
             </div>
 
-            <div class="prtn-intro">
+            <div class="prtn-intro" >
                 <div class="prtn-spc"></div>
                 <div class="prt-text">
-                    <p class="h2 yt">A PARTNER LIKE NO OTHER</p>
-                    <p class="prtn-con wt">When Michael Schumacher joined Ferrari in late 1995,
+                    <p class="h2 yt" data-aos="fade-up">A PARTNER LIKE NO OTHER</p>
+                    <p class="prtn-con wt" data-aos="fade-up">When Michael Schumacher joined Ferrari in late 1995,
                         the team had endured nearly two decades without a 
                         Drivers’ Championship.
                         Over the next nine seasons (1996–2006),
@@ -56,12 +67,12 @@
 
             <div class="prof" id="prf">
                 <div class="prof-tit">
-                    <p class="yt pp">PROFILE</p>
-                    <p class="h2 mich"> MICHAEL SCHUMACHER</p>
-                    <p class="wt"> 3 January 1969, Hürth, Germany</p>
+                    <p class="yt pp" data-aos="fade-up">PROFILE</p>
+                    <p class="h2 mich" data-aos="fade-up"> MICHAEL SCHUMACHER</p>
+                    <p class="wt" data-aos="fade-up"> 3 January 1969, Hürth, Germany</p>
                 </div>
                 <div class="prof-det">
-                    <p class="wt mc-text">Michael Schumacher (b. 1969) is a German F1 icon who 
+                    <p class="wt mc-text" data-aos="fade-up">Michael Schumacher (b. 1969) is a German F1 icon who 
                     propelled Ferrari to five straight drivers’ titles 
                     (2000–2004) and six constructors’ crowns (2000–2005). 
                     His relentless work ethic and technical mastery reshaped 
@@ -72,8 +83,8 @@
             </div> 
 
             <div class="car" id="crr">
-                <p class="h3 yt">CAREER</p>
-                <p class="car-cont wt">From Michael Schumacher’s karting triumphs as a rising 
+                <p class="h3 yt" data-aos="fade-up">CAREER</p>
+                <p class="car-cont wt" data-aos="fade-up">From Michael Schumacher’s karting triumphs as a rising 
                     prodigy to his domination of Formula 1, this section charts the
                     full timeline of his racing career—highlighting each
                     championship victory, tally of podium finishes, and
@@ -83,7 +94,7 @@
              </div>
 
             <div class="garage wt">
-                <a href="f12000.html" class="transition-link">Go to garage →</a>
+                <a href="f12000.html" class="transition-link" data-aos="fade-up">Go to garage →</a>
             </div>
         </div>
 
@@ -91,8 +102,8 @@
         <div class="partner">
         </div>
         
-        <div class="career"></div>
-        <div class="wins"></div>
+        <div class="career" data-aos="zoom-in"></div>
+        <div class="wins" data-aos="zoom-in"></div>
 
     </body>
 </html>
@@ -104,6 +115,7 @@
         font-family: Alexandria;
         background-color: black;
     }
+    
 
     .header{
         display: flex;
@@ -284,17 +296,18 @@
         position: absolute;
         display: flex;
         height: 100vh;
-        width: 100vw;
+        width: 50vw;
         top: 235vh;
         flex-direction: column;
         justify-content: center;
         left: 18%;
         align-items: left;
         gap: 5%;
+        z-index: 10;
     }
 
     .car-cont{
-        margin-left: 10%;
+        margin-left: 20%;
         width: 50vw;
         text-align: justify;
     }
@@ -319,7 +332,7 @@
     /* background */
     .Top, .partner, .career, .wins {
         height: 100vh; /* Full screen height for each section */
-        background-size: cover;
+        
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -327,18 +340,20 @@
     body.fade-in {
         opacity: 1;
         transition: opacity 1s ease-in;
+        width: 100vw;
     }
     
 
     /* background urls */
     .Top {
         background-image: url(assets/rectop.png);
+        background-size: cover;
     }
 
     .partner {
         background-image: url(assets/shumacher.png);
         background-repeat: no-repeat;
-        background-size: contain; /* or 'contain' if you want full image visible */
+        background-size: cover; /* or 'contain' if you want full image visible */
         background-position: center;
         width: 100vw;
         min-height: 140vh; /* or more, depending on how tall you want it */
@@ -353,6 +368,8 @@
 
     .career {
         background-image: url(assets/career.png);
+        background-size: cover;
+        width: 100vw;
     }
 
     .wins {

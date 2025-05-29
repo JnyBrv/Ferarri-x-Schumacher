@@ -12,3 +12,12 @@ document.querySelectorAll('.transition-link').forEach(link => {
 window.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('fade-in');
 });
+
+const scrollText = document.querySelector('.scroll-text');
+
+window.addEventListener('scroll', () => {
+  const rect = scrollText.getBoundingClientRect();
+  if (rect.top < window.innerHeight) {
+    scrollText.classList.add('visible');
+  }
+});
