@@ -122,15 +122,18 @@
 
     }
   
+    .wt{
+        color: white;
+    }
     .tNav{
-        text-align: center;
+        text-align: right;
         font-size: 400%;
         gap: 40px; 
         display: grid;
+        margin-right: 100px;
     }
 
     .tNav a{
-        color: white;
         text-decoration: none;
         font-weight: bold;
         transition: transform 0.3s ease, color 0.3s ease;
@@ -290,16 +293,19 @@
         background-position: center;
     }
 
-    .current{
-        font-size: 80px;
-        margin-right: 90px;
-        text-decoration: underline;
-        color: #FFFF00;
-        font-weight: bold;
-        transition: transform 0.3s ease, color 0.3s ease;
-        transform-origin: center;
-        display: inline-block
-    }
+    .current {
+    font-size: 90px;
+    text-decoration: underline;
+    color: #FFFF00; /* Yellow */
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform-origin: center;
+    display: block;
+    text-align: right; /* Aligns the text to the right */
+    margin-right: 0; /* Optional: remove extra spacing */
+    }   
+
+
     
     .garage {
     
